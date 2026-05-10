@@ -67,7 +67,7 @@
             bindings = <
 &kp Q      &kp W         &kp E         &kp R      &kp T       &kp ESC           &kp LEFT_BRACKET   &kp Y          &kp U      &kp I           &kp O           &kp P
 &kp A      &kp S         &kp D         &kp F      &kp G       &kp TAB           &kp RIGHT_BRACKET  &kp H          &kp J      &kp K           &kp L           &kp SLASH
-&kp Z      &kp X         &kp C         &kp V      &kp B       &ht_layer2 2 0    &ht_layer4 4 0     &kp N          &kp M      &kp COMMA       &kp PERIOD      &kp UP_ARROW
+&kp Z      &kp X         &kp C         &kp V      &kp B       &ht_layer2 2 0    &ht_layer3 3 0     &kp N          &kp M      &kp COMMA       &kp PERIOD      &kp UP_ARROW
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LANG2  &kp LSHIFT  &lt 1 SPACE       &kp ENTER          &kp BACKSPACE  &kp LANG1  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
         };
@@ -84,7 +84,7 @@
         CURSOR {
             bindings = <
 &kp GRAVE  &kp C   &kp J          &kp E                &kp LC(Z)       &kp P            &kp LPAR        &kp KP_SLASH     &kp KP_PLUS    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
-&mo 3      &kp W   &kp LC(D)      &kp M                &kp F4          &kp LC(S)        &kp RPAR        &kp KP_MULTIPLY  &kp KP_MINUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
+&mo 4      &kp W   &kp LC(D)      &kp M                &kp F4          &kp LC(S)        &kp RPAR        &kp KP_MULTIPLY  &kp KP_MINUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
 &kp LC(B)  &kp F5  &kp LC(LS(D))  &kp DEL              &kp LEFT_SHIFT  &kp LS(LC(F))    &to 0           &kp KP_NUMLOCK   &kp UNDER      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
 &kp O      &kp I   &kp LC(LS(I))  &kp LC(KP_NUMBER_0)  &kp SPACE       &kp Z            &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE  &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER
             >;
@@ -92,19 +92,19 @@
 
         NUMBER {
             bindings = <
-&kp ESC  &kp LC(NUMBER_6)  &kp LS(LC(T))  &kp LC(NUMBER_7)  &kp LC(NUMBER_5)  &kp LC(NUMBER_3)       &kp LG(J)     &kp V           &kp LG(BACKSPACE)  &kp LG(D)          &kp S      &kp L
-&none    &kp U             &kp G          &kp LS(Q)         &kp LS(I)         &kp B                  &kp SPACE     &kp LG(X)       &kp E              &kp LEFT_ALT       &kp LG(Z)  &kp B
-&none    &none             &none          &kp F3            &kp T             &kp LC(KP_NUMBER_9)    &to 0         &kp LG(V)       &kp LG(O)          &kp LG(SEMICOLON)  &kp C      &kp RBKT
-&to 0    &none             &kp LC(E)      &kp K             &kp ENTER         &kp LC(KP_NUMBER_3)    &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LG(U)          &kp LG(B)          &kp X      &kp LBKT
+&kp ESC         &kp LC(LS(L))  &kp PAGE_UP       &kp E      &kp LC(Z)        &kp P            &kp LG(J)     &kp V           &kp LG(BACKSPACE)  &kp LG(D)          &kp S      &kp L
+&kp BACKSPACE   &kp G          &kp PAGE_DOWN     &kp N      &kp KP_NUMBER_3  &kp V            &kp SPACE     &kp LG(X)       &kp E              &kp LEFT_ALT       &kp LG(Z)  &kp B
+&kp LEFT_SHIFT  &kp LC(X)      &kp LC(V)         &kp LC(C)  &kp LC(D)        &kp LC(LS(F))    &to 0         &kp LG(V)       &kp LG(O)          &kp LG(SEMICOLON)  &kp C      &kp RBKT
+&kp LCTRL       &kp LEFT_WIN   &kp LC(LEFT_ALT)  &kp TAB    &kp SPACE        &mkp RCLK        &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LG(U)          &kp LG(B)          &kp X      &kp LBKT
             >;
         };
 
         BLUETOOTH {
             bindings = <
-&kp ESC         &kp LS(LC(L))  &kp PAGE_UP    &kp E      &kp LC(Z)        &kp P            &none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp BACKSPACE   &kp G          &kp PAGE_DOWN  &kp N      &kp KP_NUMBER_3  &kp V            &none   &none         &none         &none         &none         &bt BT_CLR
-&kp LEFT_SHIFT  &kp LC(X)      &kp LC(V)      &kp LC(C)  &kp LC(D)        &kp LS(LC(F))    &none   &none         &none         &none         &none         &bt BT_CLR_ALL
-&kp RCTRL       &kp LEFT_WIN   &kp LEFT_ALT   &kp TAB    &kp SPACE        &mkp RCLK        &trans  &trans        &none         &none         &none         &trans
+&kp ESC  &kp LC(NUMBER_6)  &kp LS(LC(T))  &kp LC(NUMBER_7)  &kp LC(NUMBER_5)  &kp LC(NUMBER_3)       &none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none    &kp U             &kp G          &kp LS(Q)         &kp LS(I)         &kp B                  &none   &none         &none         &none         &none         &bt BT_CLR
+&none    &none             &none          &kp F3            &kp T             &kp LC(KP_NUMBER_9)    &none   &none         &none         &none         &none         &bt BT_CLR_ALL
+&to 0    &none             &kp LC(E)      &kp K             &kp ENTER         &kp LC(KP_NUMBER_3)    &trans  &trans        &none         &none         &none         &trans
             >;
         };
     };
