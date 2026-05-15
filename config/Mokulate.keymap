@@ -60,6 +60,40 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <4 3>;
+            layers = <2>;
+        };
+
+        Alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <15 16>;
+            layers = <2>;
+        };
+
+        senhaba_y {
+            bindings = <&kp Y>;
+            key-positions = <5 4>;
+            layers = <2>;
+        };
+
+        alt_num2 {
+            bindings = <&kp LA(KP_NUMBER_2)>;
+            key-positions = <3 2>;
+            layers = <2>;
+        };
+
+        alt_num0 {
+            bindings = <&kp LA(KP_NUMBER_0)>;
+            key-positions = <2 1>;
+            layers = <2>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
