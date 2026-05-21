@@ -17,25 +17,14 @@
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
 #
-#--- 
-# include:
-#  - board: xiao_ble//zmk
-#    shield: Mokulate_left
-#  - board: xiao_ble//zmk
-#    shield: Mokulate_right
-#    snippet: studio-rpc-usb-uart
-#  - board: xiao_ble//zmk
-#    shield: settings_reset
-#  - board: xiao_ble//zmk          # ← 追加
-#    shield: Mokulate_dongle prospector_adapter  # ← 追加
----
-include:
-  - board: seeeduino_xiao_ble
+--- 
+ include:
+  - board: xiao_ble//zmk
     shield: Mokulate_left
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble//zmk
     shield: Mokulate_right
     snippet: studio-rpc-usb-uart
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble//zmk
     shield: settings_reset
-  - board: seeeduino_xiao_ble
-    shield: Mokulate_dongle prospector_adapter
+  - board: xiao_ble//zmk          # ← 追加
+    shield: Mokulate_dongle prospector_adapter  # ← 追加
