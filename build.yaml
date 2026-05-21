@@ -21,8 +21,10 @@
  include:
   - board: xiao_ble//zmk
     shield: Mokulate_left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n   # ← 追加
   - board: xiao_ble//zmk
     shield: Mokulate_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n   # ← 追加
     snippet: studio-rpc-usb-uart
   - board: xiao_ble//zmk
     shield: settings_reset
