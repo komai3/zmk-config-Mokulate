@@ -4,5 +4,5 @@ config MOKULATE_LEFT
 config MOKULATE_RIGHT
     def_bool $(shields_list_contains,Mokulate_right)
 
-config SHIELD_MOKULATE_DONGLE
-    def_bool $(shields_list_contains,Mokulate_dongle)
+config MOKULATE_DONGLE                                # <-----
+    def_bool $(shields_list_contains,Mokulate_dongle)    # <-----
