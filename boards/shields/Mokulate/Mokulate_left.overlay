@@ -16,15 +16,3 @@
         , <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* Row3 */
         ;
 };
-
-&adc {
-    status = "okay";
-};
-
-/ {
-    vbatt: vbatt {
-        compatible = "zmk,battery-nrf-vddhdiv5";
-        output-ohms = <100000>;
-        full-ohms = <(100000 + 100000)>;
-    };
-};
