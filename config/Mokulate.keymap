@@ -98,6 +98,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
+        display-name = "L0_Base";    # <---追加
             bindings = <
 &kp Q      &kp W         &kp E         &kp R        &kp T       &kp ESC        &kp LEFT_BRACKET   &kp Y          &kp U        &kp I           &kp O           &kp P
 &kp A      &kp S         &kp D         &kp F        &kp G       &kp TAB        &kp RIGHT_BRACKET  &kp H          &kp J        &kp K           &kp L           &kp MINUS
@@ -107,6 +108,7 @@
         };
 
         SYMBOL {
+        display-name = "L1_Fn";    # <---追加
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp ESC      &kp LEFT_PARENTHESIS   &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8    &kp NUMBER_9     &kp NUMBER_0
 &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6       &kp RIGHT_PARENTHESIS  &kp GRAVE     &kp EQUAL      &kp BSLH        &kp LS(MINUS)    &kp TILDE
@@ -116,6 +118,7 @@
         };
 
         CURSOR {
+        display-name = "L2_CSWin";    # <---追加
             bindings = <
 &kp GRAVE  &kp C   &kp J          &kp E                &kp LC(Z)       &kp P            &kp LPAR        &kp KP_SLASH     &kp KP_PLUS    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
 &mo 4      &kp W   &kp LC(D)      &kp M                &kp F4          &kp LC(S)        &kp RPAR        &kp KP_MULTIPLY  &kp KP_MINUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
@@ -125,6 +128,7 @@
         };
 
         NUMBER {
+        display-name = "L3_Miro-Pc";    # <---追加
             bindings = <
 &kp ESC         &kp LC(LS(L))  &kp PAGE_UP       &kp E      &kp LC(Z)        &kp P            &kp LG(J)     &kp V           &kp LG(BACKSPACE)  &kp LG(D)          &kp S      &kp L
 &kp BACKSPACE   &kp G          &kp PAGE_DOWN     &kp N      &kp KP_NUMBER_3  &kp V            &kp SPACE     &kp LG(X)       &kp E              &kp LEFT_ALT       &kp LG(Z)  &kp B
@@ -134,6 +138,7 @@
         };
 
         BLUETOOTH {
+        display-name = "L4_BT";    # <---追加
             bindings = <
 &kp ESC  &kp LC(NUMBER_6)  &kp LS(LC(T))  &kp LC(NUMBER_7)  &kp LC(NUMBER_5)  &kp LC(NUMBER_3)       &none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &none    &kp U             &kp G          &kp LS(Q)         &kp LS(I)         &kp B                  &none   &none         &none         &none         &none         &bt BT_CLR
