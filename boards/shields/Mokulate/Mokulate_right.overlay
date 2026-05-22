@@ -22,3 +22,15 @@
 };
 
 &xiao_serial { status = "disabled"; };
+
+&adc {
+    status = "okay";
+};
+
+/ {
+    vbatt: vbatt {
+        compatible = "zmk,battery-nrf-vddhdiv5";
+        output-ohms = <100000>;
+        full-ohms = <(100000 + 100000)>;
+    };
+};
