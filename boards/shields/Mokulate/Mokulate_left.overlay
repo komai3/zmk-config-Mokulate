@@ -16,3 +16,15 @@
         , <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* Row3 */
         ;
 };
+
+/ {
+    chosen {
+        zmk,battery = &non_lipo_battery;
+    };
+
+    non_lipo_battery: non_lipo_battery {
+        compatible = "zmk,non-lipo-battery";
+        io-channels = <&adc 7>;
+        power-gpios = <&gpio0 14 (GPIO_OPEN_DRAIN | GPIO_ACTIVE_LOW)>;
+    };
+};
