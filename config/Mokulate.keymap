@@ -94,6 +94,22 @@
         };
     };
 
+    macros {
+        ctrl_Z: ctrl_Z {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(Z)>;
+            label = "CTRL_Z";
+        };
+
+        win_z: win_z {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(Z)>;
+            label = "WIN_Z";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -120,7 +136,7 @@
         CURSOR {
             display-name = "CS";
             bindings = <
-&kp GRAVE  &kp J   &kp G          &kp E                &kp LC(Z)       &kp P            &kp LPAR        &kp KP_SLASH     &kp KP_PLUS    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
+&kp GRAVE  &kp J   &kp G          &kp E                &ctrl_Z         &kp P            &kp LPAR        &kp KP_SLASH     &kp KP_PLUS    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
 &mo 4      &kp W   &kp LC(D)      &kp M                &kp F4          &kp LC(S)        &kp RPAR        &kp KP_MULTIPLY  &kp KP_MINUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
 &kp LC(B)  &kp F5  &kp LC(LS(D))  &kp DEL              &kp LEFT_SHIFT  &kp LS(LC(F))    &to 0           &kp KP_NUMLOCK   &kp UNDER      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
 &kp O      &kp I   &kp LC(LS(I))  &kp LC(KP_NUMBER_0)  &kp SPACE       &kp Z            &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE  &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER
@@ -130,10 +146,10 @@
         NUMBER {
             display-name = "Miro/Pc";
             bindings = <
-&kp ESC         &kp LC(LS(L))  &kp PAGE_UP       &kp E      &kp LC(Z)        &kp P            &kp LG(J)     &kp V           &kp LG(BACKSPACE)  &kp LG(D)          &kp S      &kp L
-&kp BACKSPACE   &kp G          &kp PAGE_DOWN     &kp N      &kp KP_NUMBER_3  &kp V            &kp SPACE     &kp LG(X)       &kp E              &kp LEFT_ALT       &kp LG(Z)  &kp B
-&kp LEFT_SHIFT  &kp LC(X)      &kp LC(V)         &kp LC(C)  &kp LC(D)        &kp LC(LS(F))    &to 0         &kp LG(V)       &kp LG(O)          &kp LG(SEMICOLON)  &kp C      &kp RBKT
-&kp LCTRL       &kp LEFT_WIN   &kp LC(LEFT_ALT)  &kp TAB    &kp SPACE        &mkp RCLK        &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LG(U)          &kp LG(B)          &kp X      &kp LBKT
+&kp ESC         &kp LC(LS(L))  &kp PAGE_UP       &kp E      &ctrl_Z          &kp P            &kp LG(J)     &kp V           &kp LG(BACKSPACE)  &kp LG(D)          &kp S   &kp L
+&kp BACKSPACE   &kp G          &kp PAGE_DOWN     &kp N      &kp KP_NUMBER_3  &kp V            &kp SPACE     &kp LG(X)       &kp E              &kp LEFT_ALT       &win_z  &kp B
+&kp LEFT_SHIFT  &kp LC(X)      &kp LC(V)         &kp LC(C)  &kp LC(D)        &kp LC(LS(F))    &to 0         &kp LG(V)       &kp LG(O)          &kp LG(SEMICOLON)  &kp C   &kp RBKT
+&kp LCTRL       &kp LEFT_WIN   &kp LC(LEFT_ALT)  &kp TAB    &kp SPACE        &mkp RCLK        &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LG(U)          &kp LG(B)          &kp X   &kp LBKT
             >;
         };
 
